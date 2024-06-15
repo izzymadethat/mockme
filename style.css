@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color: rgb(51, 164, 202);
+  text-decoration: none;
+}
+
 body {
   font-family: sans-serif;
   background-color: rgb(27, 27, 27);
@@ -68,7 +73,11 @@ body {
 }
 
 .meme-result {
-  display: flex;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  min-height: 280px;
+  width: 500px;
   align-items: center;
   gap: 10px;
 }
@@ -111,8 +120,8 @@ body {
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: -50px;
   display: flex;
   justify-content: space-between;
   width: 100%;
