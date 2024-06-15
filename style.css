@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(27, 27, 27);
+  color: rgb(220, 239, 255);
+}
+
+.bg-img {
+  max-width: 40%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.bg-img:nth-child(2) {
+  right: 30px;
+  opacity: 0.2;
+  transform: rotate(20deg);
+}
+.container {
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 12rem;
+  text-align: center;
+
+  & span {
+    font-size: xx-large;
+  }
+}
+
+.meme-box {
+  border: 2px solid rgb(220, 239, 255);
+  border-radius: 10px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.meme-form {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+
+  & button {
+    padding: 0.8rem 2rem;
+    background-color: aliceblue;
+    border: none;
+    color: rgb(51, 164, 202);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.meme-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#spongebob {
+  width: 500px;
+}
+#spongebob img {
+  max-width: 100%;
+  aspect-ratio: 4/3;
+}
+
+#result {
+  font-size: xx-large;
+  color: rgb(51, 164, 202);
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  & input {
+    padding: 0.8rem 1.3rem;
+    color: rgb(51, 164, 202);
+    outline: none;
+    border: none;
+  }
+}
+
+.form-control input::placeholder {
+  font-size: smaller;
+}
+
+.form-control input:focus {
+  border: 2px solid rgb(51, 164, 202);
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
